@@ -4,26 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script src="javascript.js" defer></script>
 </head>
-<header>     
-    <form id="Appointment-schedule" action="submit-order" method="post"> 
-</header>
 <body>
-    <form>
+    <form id="appointment-form" action="submit-app" method="post">
         <fieldset>
             <legend>Appointment Form</legend>
             <label for="fname">First Name:</label>
-            <span id="err-fname" class="error">First name cannot be empty!</span>
             <input type="text" name="fname" id="fname">
+            <span id="err-fname" class="error"  style="display: none;">First name cannot be empty!</span>
             <br>
             <label for="lname">Last Name:</label>
-            <span id="err-fname" class="error">First name cannot be empty!</span>
             <input type="text" name="lname" id="lname">
+            <span id="err-lname" class="error"  style="display: none;">Last name cannot be empty!</span>
             <br>
-            <label for="datein">Email:</label>
+            <label for="datein">Date:</label>
             <input type="date" name="datein" id="datein">
             <br>
-            <label for="timein">Email:</label>
+            <label for="timein">Time:</label>
             <input type="time" name="timein" id="timein">
         </fieldset>
         <button type="submit">Schedule</button>
